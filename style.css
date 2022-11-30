@@ -4,47 +4,63 @@
   transition: 1s ease;
 }
 
-h1 {
-  font-size: 3em;
-}
-
-p {
-  font-size: 1.5em;
-}
-
 header {
   display: block;
   margin: 0;
-  padding: 2px;
-  background-color: burlywood;
+  padding: 0 5%;
 }
 
-button {
+header img {
+  max-height: 100%;
+}
+
+header button {
+  display: flex;
   float: right;
-  padding: 2%;
+  padding: 0, 2%;
+  max-height: 100%;
+  position: inherit;
+  align-items: center;
+  font-size: 1.2em;
 }
 
 .container {
-  padding: 3px;
-  margin: 13px;
-}
-.news img {
-  /* background-image: image(graphic.png); */
-  width: 75vw;
-  margin: 0 auto;
-  height: 200px;
-  background-position: 0%;
-  background-position: top;
-  background-repeat: round;
-  width: 50%;
-  position: overlay;
-}
-
-.container {
+  /* padding: 3px; */
   display: inline-block;
-  height: 50%;
+  margin: 13px 0;
+  position: relative;
+  text-align: left;
+  height: 300px;
   align-items: left;
-  width: 50%;
+  /* width: 70%; */
+  background-image: url(./images/graphic.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  background-attachment: local;
+  text-w
+}
+
+div.news {
+  display: block;
+  align-self: left;
+  margin-top: 100px;
+}
+.news {
+  display: block;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+p {
+  font-size: 1em;
+}
+
+h4 {
+  font-size: 0.75em;
+  color: magenta;
 }
 
 .tablo {
