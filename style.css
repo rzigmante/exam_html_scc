@@ -35,7 +35,7 @@ header nav {
   margin: 13px 0;
   position: relative;
   text-align: left;
-  height: 300px;
+  height: 400px;
   align-items: left;
   /* width: 70%; */
   background-image: url(./images/graphic.png);
@@ -61,11 +61,21 @@ h1 {
 
 p {
   font-size: 1.5em;
+  
+}
+h1,
+p {
+  display: block;
+  float: left;
+  width: 55%;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 h4 {
-  font-size: 0.75em;
+  font-size: 0.9em;
   color: magenta;
+  padding: 20px 0;
 }
 
 button {
@@ -74,7 +84,9 @@ button {
   border-radius: 30px;
   border: 3px orange solid;
   background-color: beige;
-  
+  display: block;
+  margin-top: 250px;
+
 }
 
 .tablo {
@@ -122,9 +134,16 @@ button {
   filter: grayscale(100%);
 }
 
-span {
+div.social,
+div.container1,
+div.container2 {
+  margin: 60px 0;
+}
+
+.details:nth-child(1,2,3,4) {
   display: grid;
   margin: 10px;
   grid-template-columns: 50% / 50%;
   grid-column: 2 / 2;
+  grid-area: div.details
 }
