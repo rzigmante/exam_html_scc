@@ -14,7 +14,12 @@ header img {
   max-height: 100%;
 }
 
-header button {
+nav {
+  outline: 1px solid black;
+  display: inline;
+  padding: 4px;
+}
+header nav {
   display: flex;
   float: right;
   padding: 0, 2%;
@@ -38,24 +43,24 @@ header button {
   background-size: contain;
   background-position: right;
   background-attachment: local;
-  text-w
 }
 
 div.news {
   display: block;
   align-self: left;
   margin-top: 100px;
+  shape-outside: url(./images/graphic.svg);
 }
 .news {
   display: block;
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 3.5em;
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 h4 {
@@ -63,18 +68,44 @@ h4 {
   color: magenta;
 }
 
-.tablo {
-  display: block;
-  position: relative;
-  text-align: center;
-  color: black;
+button {
+  width: 100px;
+  height: 50px;
+  border-radius: 30px;
+  border: 3px orange solid;
+  
 }
 
-.tablo h1 {
+.tablo {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  color: black;
+  margin: 50px 0;
+}
+/* .tablo img {
+  position: aboslute;
+  clip: rect(0, 100px, 100px, 0);
+  /* clip: shape(top,right, bottom, left); NB 'rect' is the only available option */
+} */
+
+/* .tablo h1 {
   font-size: 16px;
   font-weight: bold;
+} */
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 3px;
+  margin: 0;
 }
 
+.logos img {
+  padding: 0 20px;
+}
 .tekstas {
   position: absolute;
   top: 50%;
@@ -82,6 +113,17 @@ h4 {
   transform: translate(-50%, -50%);
 }
 
+.auction {
+  margin: 100px 0;
+}
+
 .social img {
   filter: grayscale(100%);
+}
+
+span {
+  display: grid;
+  margin: 10px;
+  grid-template-columns: 50% / 50%;
+  grid-column: 2 / 2;
 }
